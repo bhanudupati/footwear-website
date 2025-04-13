@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Background Section */
+.background {
+    background-image: url('background.jpg');
+    background-size: cover;
+    height: 400px;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+}
+
+/* Product Section */
+#products {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filters input, .filters select {
+    padding: 10px;
+    font-size: 16px;
+    width: 45%;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.product button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background-color: #555;
+}
+
+/* About Section */
+#about {
+    padding: 50px;
+    background-color: #e2e2e2;
+    text-align: center;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact form {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#contact button {
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+    }
+}
